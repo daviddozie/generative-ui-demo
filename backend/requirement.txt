@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+langchain
+langchain-openai
+langgraph
+copilotkit
+ag-ui-langgraph
+python-dotenv
