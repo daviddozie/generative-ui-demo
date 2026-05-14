@@ -6,7 +6,7 @@ import { useComponent } from "@copilotkit/react-core/v2";
 import { PieChartProps, FlightCardProps } from "./schema";
 import { PieChart } from "./components/pie-chart";
 import { FlightCard } from "./components/flight-card";
-import { useExampleSuggestions } from "./hooks/use-examples-suggestions";
+import { useExampleDynamicSuggestions,  useExampleFixedSuggestions } from "./hooks/use-examples-suggestions";
 
 const agentId = "default";
 
@@ -37,7 +37,8 @@ export default function Home() {
         render: FlightCard,
     });
 
-    useExampleSuggestions();
+    useExampleDynamicSuggestions();
+    useExampleFixedSuggestions();
 
     return (
         <main className="flex h-screen w-full">

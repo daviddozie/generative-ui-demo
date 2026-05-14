@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { CopilotKit } from "@copilotkit/react-core/v2";
 import "@copilotkit/react-core/v2/styles.css";
+import { demonstrationCatalog } from "./catalog/renders";
 
 import "./globals.css";
 
@@ -34,6 +35,7 @@ export default function RootLayout({
         <CopilotKit
           runtimeUrl="/api/copilotkit"
           useSingleEndpoint={false}
+          a2ui={{ catalog: demonstrationCatalog }}
         >
           {children}
         </CopilotKit>

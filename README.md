@@ -146,6 +146,18 @@ The frontend will be available at **http://localhost:3000**.
 
 ---
 
+# Tests
+
+```
+Show a flight from SFO to JFK on Pacific Air departing at 08:30 for $249
+---
+Show a pie chart of revenue distribution: Enterprise Subscriptions 52%, 
+Pro Tier Upgrades 18%, Consulting Services 12%, Marketplace Sales 8%, 
+API Usage Overages 5%, Partnership Revenue 3%, Training & Workshops 2%
+```
+
+---
+
 ## 📦 Available Scripts
 
 ### Frontend

@@ -9,6 +9,19 @@ const runtime = new CopilotRuntime({
     agents: {
         default: langGraphAgent,
     },
+    openGenerativeUI: true,
+    // a2ui: {
+    //     injectA2UITool: true,
+    // }
+    mcpApps: {
+        servers: [
+            {
+                type: "http",
+                url: "https://mcp.excalidraw.com", // <- Exalidraw MCP Server
+                serverId: "example_mcp_server",
+            }
+        ]
+    }
 });
 
 const endpoint = createCopilotEndpoint({
